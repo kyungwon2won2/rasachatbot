@@ -1,0 +1,103 @@
+version: "3.1"
+
+intents:
+  - greet
+  - greet2
+  - provide_departure
+  - provide_destination
+  - provide_time
+  - provide_seat_class
+  - ask_schedule_unavailability
+  - accept_alternative_destination_recommendation
+  - accept_alternative_destination_recommendation2
+  - provide_surrounding
+  - provide_surrounding2
+  - accept_suggested_destination
+  - thank_you
+  - thank_you2
+  - goodbye
+
+entities:
+  - location_from
+  - location_to
+  - time
+  - seat_class
+  - surrounding
+
+slots:
+  location_from:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: location_from
+  location_to:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: location_to
+  time:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: time
+  seat_class:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: seat_class
+  surrounding:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: surrounding
+
+responses:
+  utter_greet:
+    - text: "Hello. This is the bus schedule information system."
+  utter_greet2:
+    - text: "Hello again. How can I assist you today?"
+  utter_ask_departure:
+    - text: "Where is your departure point?"
+  utter_ask_destination:
+    - text: "Then, what is your destination?"
+  utter_ask_time:
+    - text: "Do you have a preferred departure time?"
+  utter_ask_seat_class:
+    - text: "One last question. What seat class would you like?"
+  utter_ask_alternative_destination_recommendation:
+    - text: "May I recommend a destination that suits your preferences?"
+  utter_ask_alternative_destination_recommendation2:
+    - text: "Would you like to consider alternative destinations based on your preferences?"
+  utter_ask_surrounding:
+    - text: "What kind of surroundings do you prefer? (e.g., beach, mountains, near the airport)"
+  utter_ask_surrounding2:
+    - text: "Do you have any other preferences for the surroundings?"  
+  utter_goodbye:
+    - text: "If you need more information, please feel free to contact me again. Thank you."
+  utter_goodbye2:
+    - text: "Thank you for using our service. Feel free to return if you have more questions."
+
+actions:
+  - utter_greet
+  - utter_greet2
+  - utter_ask_departure
+  - utter_ask_destination
+  - utter_ask_time
+  - utter_ask_seat_class
+  - action_find_bus_schedule
+  - action_check_schedule_availability
+  - action_recommend_destination_environment
+  - action_recommend_destination_environment2
+  - utter_ask_alternative_destination_recommendation
+  - utter_ask_alternative_destination_recommendation2
+  - utter_ask_surrounding
+  - utter_ask_surrounding2
+  - action_suggest_destination
+  - action_suggest_destination2
+  - action_show_destination_schedule
+  - utter_goodbye
+  - utter_goodbye2
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

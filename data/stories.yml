@@ -1,0 +1,41 @@
+version: "3.1"
+
+stories:
+
+- story: 대안적 목적지 추천 요청
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - action: utter_ask_departure
+  - intent: provide_departure
+  - action: utter_ask_destination
+  - intent: provide_destination
+  - action: utter_ask_time
+  - intent: provide_time
+  - action: utter_ask_seat_class
+  - intent: provide_seat_class
+  - action: action_find_bus_schedule
+  - intent: ask_schedule_unavailability
+  - action: utter_ask_alternative_destination_recommendation
+  - intent: accept_alternative_destination_recommendation
+  - action: utter_ask_surrounding
+  - intent: provide_surrounding
+  - action: action_recommend_destination_environment
+  - intent: thank_you
+  - action: utter_goodbye
+
+- story: 직접 목적지 추천 및 시간표 확인
+  steps:
+  - action: utter_greet2
+  - intent: greet2
+  - action: utter_ask_alternative_destination_recommendation2
+  - intent: accept_alternative_destination_recommendation2
+  - action: utter_ask_surrounding2
+  - intent: provide_surrounding2
+  - action: action_suggest_destination2
+  - intent: accept_suggested_destination
+  - action: action_show_destination_schedule
+  - intent: thank_you2
+  - action: utter_goodbye2
+
+

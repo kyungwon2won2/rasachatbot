@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-location_from",
+      "2": "I-location_from",
+      "3": "L-location_from",
+      "4": "U-location_from",
+      "5": "B-location_to",
+      "6": "I-location_to",
+      "7": "L-location_to",
+      "8": "U-location_to",
+      "9": "B-seat_class",
+      "10": "I-seat_class",
+      "11": "L-seat_class",
+      "12": "U-seat_class",
+      "13": "B-time",
+      "14": "I-time",
+      "15": "L-time",
+      "16": "U-time",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-location_from": 1,
+      "I-location_from": 2,
+      "L-location_from": 3,
+      "U-location_from": 4,
+      "B-location_to": 5,
+      "I-location_to": 6,
+      "L-location_to": 7,
+      "U-location_to": 8,
+      "B-seat_class": 9,
+      "I-seat_class": 10,
+      "L-seat_class": 11,
+      "U-seat_class": 12,
+      "B-time": 13,
+      "I-time": 14,
+      "L-time": 15,
+      "U-time": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

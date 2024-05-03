@@ -1,0 +1,101 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello, I want to see bus schedule
+    - Hi, show me bus schedule
+    - Hi, I want to see bus schedule
+
+- intent: greet2
+  examples: |
+    - Hello, recommend me destination
+    - Hi, recommend please
+    - Hi, recommend my destination
+
+- intent: provide_departure
+  examples: |
+    - I am leaving from [wonju](location_from)
+    - [busan](location_from) is my departure point
+    - [seoul](location_from)
+    - [daejeon](location_from)
+    - [wonju](location_from)
+- intent: provide_destination
+  examples: |
+    - My destination is [pyeonchang](location_to)
+    - [incheon](location_to)
+    - I want to go [sokcho](location_to)
+    - [pyeonchang](location_to)
+    - [yeosu](location_to)
+
+- intent: provide_time
+  examples: |
+    - I wish to leave by [15:00](time)
+    -[10:00](time)
+    -[11:00](time)
+    -[1:00](time)
+    -[14:00](time)
+    -[16:00](time)
+    -[18:00](time)
+    -[20:00](time)
+
+- intent: provide_seat_class
+  examples: |
+    -[premium](seat_class) seat
+    -[standard](seat_class) seat
+
+- intent: ask_schedule_unavailability
+  examples: |
+    - then, what can I do?
+    - can you tell me other saying
+
+- intent: accept_alternative_destination_recommendation
+  examples: |
+    - I'm open to other destination suggestions
+    - sure, of course
+    - Okay, let's try another destination
+
+- intent: accept_alternative_destination_recommendation2
+  examples: |
+    - Sure, suggest another place
+    - Please propose a different location
+    - I'm flexible with the destination
+
+- intent: provide_surrounding
+  examples: |
+    - I like places with an [airport](surrounding) nearby
+    - [airport](surrounding)
+    - [ocean](surrounding)
+    - [mountain](surrounding)
+    - [expo](surrounding)
+
+- intent: provide_surrounding2
+  examples: |
+    - I enjoy [mountain](surrounding) areas
+    - Preferably somewhere [ocean](surrounding)
+    - An area close to an [airport](surrounding) would be ideal
+
+- intent: accept_suggested_destination
+  examples: |
+    - That destination works for me
+    - I agree with the suggested place
+    - Yes, let's go with that destination
+
+- intent: thank_you
+  examples: |
+    - Thanks for your help
+    - Thank you
+    - Really appreciate it
+    - Thanks a lot
+
+- intent: thank_you2
+  examples: |
+    - Many thanks for the assistance
+    - Grateful for the help
+    - I appreciate your support
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Bye
+    - See you later

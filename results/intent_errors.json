@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Okay",
+    "intent": "accept_suggested_destination",
+    "intent_prediction": {
+      "name": "accept_alternative_destination_recommendation",
+      "confidence": 0.5732908844947815
+    }
+  }
+]

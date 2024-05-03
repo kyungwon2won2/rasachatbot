@@ -1,0 +1,19 @@
+{
+  "busan": "Busan",
+  "seoul": "Seoul",
+  "daegu": "Daegu",
+  "incheon": "Incheon",
+  "jeju": "Jeju",
+  "12:00": "12:00",
+  "18:00": "18:00",
+  "3:00": "3:00",
+  "standard class": "standard class",
+  "premium class": "premium class",
+  "economy seat": "economy seat",
+  "beach": "beach",
+  "mountains": "mountains",
+  "airport": "airport",
+  "coastal": "coastal",
+  "mountainous": "mountainous",
+  "mountain": "mountain"
+}
