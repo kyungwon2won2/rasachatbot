@@ -1,2 +1,2 @@
 ## rasa 챗봇과 mysql DB의 연동을 이용한 버스예약 및 목적지 추천 시스템 프로젝트
-![image.png](imgage.png)
+<img src="immage.png">
